@@ -2,6 +2,9 @@
 /**
  * times_tables - print the 9 times tables
  * Return: Always 0 (success)
+ * @num: number of the time tables
+ * @mult the multiply figure
+ * @prod: the multiplication of num and mult
  */
 void times_table(void)
 {
