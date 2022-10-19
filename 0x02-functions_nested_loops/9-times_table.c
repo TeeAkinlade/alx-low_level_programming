@@ -1,15 +1,14 @@
+#include <stdio.h>
 #include "main.h"
 /**
- * times_tables - print the 9 times tables
+ * times_table -  print the 9 times table
  * Return: Always 0 (success)
  * @num: number of the time tables
- * @mult the multiply figure
- * @prod: the multiplication of num and mult
+ * @mult: the multiply figure
+ * @prod: the multiplication of number and product
  */
-void times_table(void)
+void times_table(int num, int mult, int prod)
 {
-	int num, mult, prod;
-
 	for (num = 0; num <= 9; num++)
 	{
 		_putchar('0');
