@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 /**
  * _strcat - used to concantenate two strings
  * @dest: destination
