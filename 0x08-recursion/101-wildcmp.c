@@ -1,6 +1,6 @@
 #include "main.h"
  /**
-  * wildcmp - checks two strings for match even if one is full of wildcard
+  * @wildcmp - checks two strings for match even if one is full of wildcard
   * @s1: firat string
   * @s2: second strg
   * Return: 1 ,other 0
