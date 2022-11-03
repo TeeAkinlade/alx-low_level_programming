@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _intcreasevar - to find squar root
+ * _increasevar - to find squar root
  * @i: interger
  * @n: the number
  * Return: i, i + 1 or sqrt
