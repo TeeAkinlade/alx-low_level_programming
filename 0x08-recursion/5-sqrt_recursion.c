@@ -2,6 +2,7 @@
 /**
  * _sqrt_recursion - to find squar root
  * _increasevar - first
+ * @i: interger
  * @n: the number
  * Return: i, i + 1 or sqrt
  */
