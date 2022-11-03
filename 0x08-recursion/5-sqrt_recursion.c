@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _sqrt_recursion - to find squar root
+ * _increasevar - first
  * @n: the number
  * Return: i, i + 1 or sqrt
  */
