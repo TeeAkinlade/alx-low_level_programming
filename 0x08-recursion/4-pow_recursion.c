@@ -2,8 +2,9 @@
 /**
  * _pow_recursion - return x to the y
  * @x: number
- * @y: exponent
- * Retrn x to y or - 1
+ * @y: exponent number
+ *
+ * Return: x to y or - 1
  */
 int _pow_recursion(int x, int y)
 {
@@ -13,4 +14,6 @@ int _pow_recursion(int x, int y)
 		return (1);
 	else if (y % 2 == 0)
 		return (_pow_recursion(x, y / 2) * _pow_recursion(x, y / 2));
-				return (x * _pow_recursion(x, y / 2) * _pow_recursion(x, y / 2));
+	else
+		return (x * _pow_recursion(x, y / 2) * _pow_recursion(x, y / 2));
+}
