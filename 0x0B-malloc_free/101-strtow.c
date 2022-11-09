@@ -1,13 +1,13 @@
 #include <stdlib.h>
-#include <main.h>
+#include "main.h"
 #include <stdio.h>
 /**
- * count_words - counts the numbers of words
- * @str: the string to be searched
+ * count_word - counts the numbers of words
+ * @s: the string to be searched
  *
  * Return: the number of word contain in str
  */
-int count_word(char *str)
+int count_word(char *s)
 {
 	int flag, c, w;
 
@@ -19,37 +19,52 @@ int count_word(char *str)
 		if (s[c] == ' ')
 			flag = 0;
 		else if (flag == 0)
-		{
 			flag = 1;
-			w++;
-		}
+		w++;
 	}
 	return (w);
 }
-
-
 
 /**
  * **strtow - splits a strings into words
  * @str: the string to be splited
  * Return: if str = NULL,str = "", or the functions fails
- * 		otherwise - apointer to an array of the strings words
+ *
  */
 char **strtow(char *str)
 {
 	char **matrix, *tmp;
 	int i, k = 0, len = 0, words, c = 0, start, end;
 
-	while (*(str + len)
-			len++;
-			words = count_word(str);
-			return (NULL)
-			matrix = (char **) malloc(sizeof(char *) * (words + 1));
-			if (matrix == NULL)
-			return (NULL)B
-			for (i = 0; i <= len; i++)
-			{
-			if (str[i] == ' ' || str[i] == '\0')
-			{
-
+	while (*(str + len))
+		len++;
+	words = count_word(str);
+	if (words == 0)
+		return (NULL);
+	matrix = (char **) malloc(sizeof(char *) * (words + 1));
+	if (matrix == NULL)
+		return (NULL);
+	for (i = 0; i <= len; i++)
+	{
+		if (str[i] == ' ' || str[i] == '\0')
+		{
 			if (c)
+			{
+				end = i;
+				tmp = (char *) malloc(sizeof(char) * (c + 1));
+				if (tmp == NULL)
+					return (NULL);
+				while (start < end)
+					*tmp++ = str[start++];
+				*tmp = '\0';
+				matrix[k] = tmp - c;
+				k++;
+				c = 0;
+			}
+		}
+		else if (c++ == 0)
+			start = i;
+	}
+	matrix[k] = NULL;
+	return (matrix);
+}

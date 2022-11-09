@@ -10,4 +10,5 @@ char *argstostr(int ac, char **av);
 char **strtow(char *str);
 int _putchar(char c);
 int _strlen(char *s);
+int count_word(char *s);
 #endif
