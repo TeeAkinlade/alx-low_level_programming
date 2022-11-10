@@ -14,7 +14,7 @@ int **alloc_grid(int width, int height)
 	int y;
 	int **me;
 
-	if (width < 0 || height < 0)
+	if (width <= 0 || height <= 0)
 		return (NULL);
 
 	me = malloc(sizeof(int *) * height);
