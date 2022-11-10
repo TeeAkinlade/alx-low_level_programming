@@ -34,6 +34,10 @@ char *argstostr(int ac, char **av)
 		{
 	str[r++] = '\n';
 		}
+		else
+		{
+	free(str);
+		}
 	}
 	return (str);
 }
