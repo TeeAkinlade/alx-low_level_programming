@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * *_realloc - reallocate a memory block
+ * _realloc - reallocate a memory block
  * @ptr: pointer to the previous allocated memory
  * @old_size: size of the allocated space ptr
- * @new_sizev size of the newly allocatwd space
+ * @new_size: size of the newly allocatwd space
  * Return: pointer
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
