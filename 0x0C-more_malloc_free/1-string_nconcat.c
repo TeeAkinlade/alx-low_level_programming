@@ -5,6 +5,7 @@
  * @s1: first string
  * @s2: second string
  * @n: the number of byte
+ * Return: char pointer to newly allocated place in memory
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -16,14 +17,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else
 	{
 		for (i = 0; s1[i]; i++)
-			return (i);
+			;
 	}
 	if (s2 == NULL)
 		j = 0;
 	else
 	{
 		for (j = 0; s2[j]; j++)
-			return (j);
+			;
 	}
 	if (j > n)
 		j = n;
@@ -36,3 +37,4 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s[k + i] = s2[k];
 	s[i + j] = '\0';
 	return (s);
+}
