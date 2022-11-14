@@ -2,7 +2,8 @@
 #include <stdlib.h>
 /**
  * main - check the code
- * Return: on success return 0
+ * Return: on success return 1
+ * __FILE__: display the current directory
  */
 int main(void)
 {
