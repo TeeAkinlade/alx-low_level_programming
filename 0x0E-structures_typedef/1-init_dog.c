@@ -1,5 +1,5 @@
-#ifndef DOG_H
-#define DOG_H
+#include "dog.h"
+#include <stdlib.h>
 /**
  * init_dog - initialize a variable
  * @d: the dog
