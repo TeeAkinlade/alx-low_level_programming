@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int byte, i;
+	int bytes, i;
 	char *opc= (char *) main;
 
 	if (argc != 2)
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	for (i = 0; i < bytes; i++)
 	{
 		printf("%02x",opc[i] & 0xFF);
-		if (i ñ= bytes -1)
+		if (i != bytes -1)
 			printf(" ");
 	}
 	print("\n");
