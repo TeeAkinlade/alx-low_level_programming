@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "function_pointers.h"
 /**
- * int-index - search for an interger
+ * int_index - search for an interger
  * @array: the array to be inserted
  * @size: the size
  * @cmp: oointer comparing
