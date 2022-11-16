@@ -2,8 +2,10 @@
 #include <stdlib>
 
 /**
- *
- *
+ * main - void
+ * @argc: arguement
+ * @argv: vector arguement
+ * Return: on success 1
  */
 int main(int argc, char *argv[])
 {
