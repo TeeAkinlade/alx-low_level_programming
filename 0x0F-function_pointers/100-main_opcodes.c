@@ -2,7 +2,7 @@
 #include <stdlib>
 
 /**
- * main - void
+ * main - prints opcodes
  * @argc: arguement
  * @argv: vector arguement
  * Return: on success 1
@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(1);
 	}
-	byte = atoi(argv[1]);
+	bytes = atoi(argv[1]);
 
 	if (bytes < 0)
 	{
@@ -25,9 +25,9 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 	arr = (char *)main;
-	for (i = o; i < bytes; i++)
+	for (i = 0; i < bytes; i++)
 	{
-		if (i ==bytes -1)
+		if (i == bytes -1)
 		{
 			printf("%02hhx\n", arr[i]);
 			break;

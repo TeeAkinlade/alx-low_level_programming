@@ -4,7 +4,7 @@
  * int_index - search for an interger
  * @array: the array to be inserted
  * @size: the size
- * @cmp: oointer comparing
+ * @cmp: pointer comparing
  * Return: index to be return
  */
 int int_index(int *array, int size, int (*cmp)(int))
